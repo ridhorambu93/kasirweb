@@ -12,7 +12,7 @@
            <th class="text-center">Kode Barang</th>
            <th class="text-center">Nama Barang</th>
            <th class="text-center">Harga Barang</th>
-           <th class="text-center">Pokok Barang</th>
+           <th class="text-center">Harga Pokok</th>
            <th class="text-center">Total</th>
            <th class="text-center">Action</th>
        </tr>
@@ -20,15 +20,16 @@
           <tr>
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $b->nama_barang ?></td>
+                <td><?php echo $b->kode_barang ?></td>
                 <!--format Rp-->
-                <td>Rp. <?php echo number_format($d->kode_barang,0,',','.')  ?></td>
-                <td>Rp. <?php echo number_format($d->harga_barang,0,',','.')  ?></td>
-                <td>Rp. <?php echo number_format($d->pokok_barang,0,',','.')  ?></td>
-                <td>Rp. <?php echo number_format($d->kode_barang + $d->harga_barang+$d->pokok_barang,0,',','.')  ?></td>
+              
+                <td>Rp. <?php echo number_format($b->harga_barang,0,',','.')  ?></td>
+                <td>Rp. <?php echo number_format($b->pokok_barang,0,',','.')  ?></td>
+                <td>Rp. <?php echo number_format( $b->harga_barang+$b->pokok_barang,0,',','.')  ?></td>
                 <td>
                   <center>
-                    <a class="btn btn-primary" href="<?php echo base_url('admin/dataBarang/updateData/'.$j->id_barang) ?>"><i class="fas fa-edit"></i></a>
-                    <a onclick="return confirm('Yakin Hapus')" class="btn btn-danger" href="<?php echo base_url('admin/dataBarang/deleteData/'.$j->id_barang) ?>"><i class="fas fa-trash"></i></a>
+                    <a class="btn btn-primary" href="<?php echo base_url('admin/dataBarang/updateData/'.$b->id_barang) ?>"><i class="fas fa-edit"></i></a>
+                    <a onclick="return confirm('Yakin Hapus')" class="btn btn-danger" href="<?php echo base_url('admin/dataBarang/deleteData/'.$b->id_barang) ?>"><i class="fas fa-trash"></i></a>
                   </center>
                 </td>
          </tr>
