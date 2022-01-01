@@ -254,12 +254,6 @@ a.hide-link:hover {
     color: blue !important;
 }
 
-.background-login {
-    background-image: url('../img/store.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 .background-register {
     padding: 10px 15px;
     background-image: url('../img/register.jpg');
