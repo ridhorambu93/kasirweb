@@ -1,32 +1,53 @@
-<section class="signup-content">
-    <div class="container">
+<div class="container">
+    <div class="card-body m-3" style="background: #79B5F0">
         <div class="row justify-content-center">
-            <h3 class="text-dark text-center font-weight-bold text-capitalize mb-3">Form Registrasi</h3>
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <form action="#" method="POST">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <form role="form">
+                    <h3 class="text-center text-dark font-weight-bold text-capitalize mb-3">form registrasi</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Isi Nama anda" />
+                                <input type="text" name="fullname" id="fullName" class="form-control input-lg" placeholder="Nama Lengkap" tabindex="1">
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Isi Email anda" />
+                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Alamat Email" tabindex="4">
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="password" id="password" placeholder="Isi Password" />
-                                <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                                <input type="text" name="phone_number" id="phoneNumber" class="form-control input-lg" placeholder="Nomor Handphone" tabindex="2">
                             </div>
+                        </div>
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <input type="password" class="form-control" name="re_password" id="re_password" placeholder="Ulangi password anda" />
+                                <textarea name="adress" id="adress" placeholder="Alamat Lengkap" class="form-control cols="30" rows="5"></textarea>
                             </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary" type="submit">Daftarkan Akun</button>
-                                <p class="text-secondary mt-2 float-right">Sudah punya akun ? <a href="<?php echo base_url('admin/auth') ?>" class="hide-link">masuk disini</a></p>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username" tabindex="3">
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="password_confirmation" id="passwordConfirmation" class="form-control input-lg" placeholder="Konfirmasi Password" tabindex="6">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6"><button type="submit" class="btn btn-primary btn-block btn-lg" tabindex="7">Daftar</button></div>
+                        <div class="col-xs-12 col-md-6"><a href="<?php echo base_url('admin/auth'); ?>" class="btn btn-success btn-block btn-lg">Masuk ke akun</a></div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</section>
+</div>

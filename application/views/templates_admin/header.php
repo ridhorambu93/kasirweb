@@ -17,7 +17,7 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url()?>/assets/css/sb-admin-2.min.css" rel="stylesheet">
-    <!-- custom style page register -->
-    <link href="<?php echo base_url('assets/css/register-style.css'); ?>" rel="stylesheet" type="text/css">
+    <!-- custom style page login -->
+    <link href="<?php echo base_url('assets/css/login.css'); ?>" rel="stylesheet" type="text/css">
 
 </head>
