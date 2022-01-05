@@ -9,8 +9,8 @@
    <table class="table table-bordered table-striped mt-2">
        <tr>
            <th class="text-center">No</th>
-           <th class="text-center">Kode Barang</th>
            <th class="text-center">Nama Barang</th>
+           <th class="text-center">Kode Barang</th>
            <th class="text-center">Harga Barang</th>
            <th class="text-center">Harga Pokok</th>
            <th class="text-center">Total</th>

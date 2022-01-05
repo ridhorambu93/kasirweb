@@ -16,7 +16,7 @@
       </div>
       <div class="form-group">
          <label>Kode Barang</label>
-         <input type="number" name="kode_barang" class="form-control" value="<?php echo $b->kode_barang ?>">
+         <input type="text" name="kode_barang" class="form-control" value="<?php echo $b->kode_barang ?>">
           <?php echo form_error('kode_barang','<div class="text-small text-danger"></div>') ?>
       </div>
       <div class="form-group">
